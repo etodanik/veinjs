@@ -15,12 +15,12 @@ CSS injection is the process of injecting CSS definitions into a document dynami
 
 ## Step 1 - Include your Javascript
 veinjs is a jQuery plugin, so you gotta have that first:
-```javascript
+```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 ```
 
 Then, just include vein.js, wherever it lives on your server:
-```javascript
+```html
 <script src="vein.js"></script>
 ```
 
