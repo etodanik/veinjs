@@ -1,3 +1,8 @@
+/**
+ *	vein.js - version 0.1
+ *
+ *	by Danny Povolotski (dannypovolotski@gmail.com)
+ **/
 (function($) {
 
 	var vein = function(){};
