@@ -57,3 +57,6 @@ That's about all there is to know! Happy injecting!
 If you find any interesting uses for this little library, please let me know!
 
 Issues and Pull Requests are more than welcome!
+
+If you have any questions, drop me a line at:
+danny@caffeine.co.il
