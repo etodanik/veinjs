@@ -14,12 +14,7 @@ CSS injection is the process of injecting CSS definitions into a document dynami
 # How do I use veinjs?
 
 ## Step 1 - Include your Javascript
-veinjs is a jQuery plugin, so you gotta have that first:
-```html
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-```
-
-Then, just include vein.js, wherever it lives on your server:
+Veinjs has no dependencies, so just include vein.js, wherever it lives on your server:
 ```html
 <script src="vein.js"></script>
 ```
@@ -32,25 +27,25 @@ Here are a few examples:
 ### Basic Usage
 Let's change all our headers to the color red.
 ```javascript
-$.vein.inject('h1', {'color' : 'red'});
+vein.inject('h1', {'color' : 'red'});
 ```
 
 ### Multiple Selectors
 Now, let's change both h2 and h3 to greens, and make them bold!
 ```javascript
-$.vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : 'bold'});
+vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : 'bold'});
 ```
 
 ### Canceling a property
 Alright, maybe not bold...
 ```javascript
-$.vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : null});
+vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : null});
 ```
 
 ### Canceling a ruleset by selector
 You know what? Red headers look ugly, let's cancel that.
 ```javascript
-$.vein.inject('h1', null);
+vein.inject('h1', null);
 ```
 
 That's about all there is to know! Happy injecting!
