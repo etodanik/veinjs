@@ -29,7 +29,7 @@
     	}
 
     	return self.element;
-    }
+    };
 
     // Let's inject some CSS. We can supply an array (or string) of selectors, and an object
     // with CSS value and property pairs.
