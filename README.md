@@ -33,13 +33,13 @@ vein.inject('h1', {'color' : 'red'});
 ### Multiple Selectors
 Now, let's change both h2 and h3 to greens, and make them bold!
 ```javascript
-vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : 'bold'});
+vein.inject(['h2', 'h3'], {'color' : 'green', 'font-weight' : 'bold'});
 ```
 
 ### Canceling a property
 Alright, maybe not bold...
 ```javascript
-vein.inject(['h2', 'h3'], {'color' : 'h3', 'font-weight' : null});
+vein.inject(['h2', 'h3'], {'color' : 'green', 'font-weight' : null});
 ```
 
 ### Canceling a ruleset by selector
