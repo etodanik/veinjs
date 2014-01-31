@@ -1,0 +1,25 @@
+.loaded-item{
+	background-color: #eee;
+	padding: 0.75em;
+	margin: 0.75em 0;
+
+	-webkit-transition: background-color 1s ease;
+	-moz-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.annotations{
+	padding: 1em;
+}
+
+.next-button, .github-button{
+	display: none;
+}
