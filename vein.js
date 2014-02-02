@@ -37,7 +37,7 @@
     vein.prototype.inject = function(selectors, css) {
     	var self 		=	this,
     		element 	=	self.getStylesheet(),
-    		si, sl, matches, ri, rl, cssText, mi, ml;
+    		si, sl, matches, ri, rl, cssText, property, mi, ml;
 
     	if(typeof selectors === 'string') {
     		selectors = [selectors];
