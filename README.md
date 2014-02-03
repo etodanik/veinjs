@@ -9,7 +9,7 @@ CSS injection is the process of injecting CSS definitions into a document dynami
 # Why inject?
 - *Persistence* - Say you want to dynamically make all your sub headers a certain color. You apply CSS properties with jQuery, and everything looks great. But then, you load some more stuff with AJAX, and you notice that your CSS is useless, because it has been only applied to the elements currently living in DOM. That's when injection can save you headache. Just apply any CSS code once, and it's valid - until the next refresh!
 
-- *Performance* - Our minions at jsperf.com tell us that injecting CSS rules for a vast number of elements is VERY fast, check it out for yourself: http://jsperf.com/inject-vs-apply
+- *Performance* - Our minions at jsperf.com tell us that injecting CSS rules for a vast number of elements is VERY fast, check it out for yourself: http://jsperf.com/inject-vs-apply/2
 
 # How do I use veinjs?
 
