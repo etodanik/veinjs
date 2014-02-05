@@ -51,6 +51,13 @@ You know what? Red headers look ugly, let's cancel that.
 vein.inject('h1', null);
 ```
 
+# Component support
+
+```js
+var vein = require('veinjs');
+vein.inject('h1', {'color' : 'red'});
+```
+
 That's about all there is to know! Happy injecting!
 If you find any interesting uses for this little library, please let me know!
 
