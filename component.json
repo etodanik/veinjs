@@ -1,0 +1,18 @@
+
+{
+  "name": "veinjs",
+  "description": "Injects CSS into the document (it's a perfectly legal procedure)",
+  "version": "0.1.0",
+  "keywords": [
+    "veinjs",
+    "inject",
+    "css"
+  ],
+  "dependencies": {
+  },
+  "scripts": [
+    "vein.js"
+  ],
+  "main": "vein.js",
+  "license": "MIT"
+}
