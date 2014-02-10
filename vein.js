@@ -73,8 +73,13 @@
     					cssText.push(property + ': ' + css[property] + ';');
     				}
     			}
-    			cssText = selectors[si] + '{' + cssText.join('') + '}';
-    			self.stylesheet.insertRule(cssText, self.rules.length);
+                joined = cssText.join('');
+    			cssText = selectors[si] + '{' + joined + '}';
+    			if ( self.stylesheet.insertRule ) {
+                    self.stylesheet.insertRule(cssText, self.rules.length);
+                } else {
+                    self.stylesheet.addRule( selectors[si] , joined , self.rules.length );
+                }
     		} 
     		
     		// Otherwise, we're just going to modify the property
