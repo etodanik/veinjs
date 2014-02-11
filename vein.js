@@ -1,5 +1,5 @@
 /**
- *	vein.js - version 0.2
+ *	vein.js - version 0.2.1
  *
  *	by Danny Povolotski (dannypovolotski@gmail.com)
  **/
@@ -24,7 +24,7 @@
     		// We have just appended our Stylesheet, - it's the last one in HEAD
     		// TODO: Find a more reliable way to pair the element and the Stylesheet object?
     		self.stylesheet = document.styleSheets[ document.styleSheets.length - 1 ];
-    		
+
     		// rules / cssRules is for cross-browser compatability. IE/FF/WebKit call it differently
     		self.rules = self.stylesheet[ document.all ? 'rules' : 'cssRules' ];
     	}
@@ -63,12 +63,12 @@
 
     		// If all we wanted is to delete that ruleset, we're done here
     		if(css === null) return;
-    		
-            // If no rulesets have been found for the selector, we will create it below    
-    		if(matches.length === 0) {	
+
+            // If no rulesets have been found for the selector, we will create it below
+    		if(matches.length === 0) {
     			cssText = [];
 
-    			for(property in css) { 
+    			for(property in css) {
     				if (css.hasOwnProperty(property)) {
     					cssText.push(property + ': ' + css[property] + ';');
     				}
@@ -80,8 +80,8 @@
                 } else {
                     self.stylesheet.addRule( selectors[si] , joined , self.rules.length );
                 }
-    		} 
-    		
+    		}
+
     		// Otherwise, we're just going to modify the property
     		else {
     			for(mi = 0, ml = matches.length; mi < ml; mi++) {
