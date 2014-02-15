@@ -12,7 +12,7 @@
     var vein = function(){};
 
     // Get the stylesheet we use to inject stuff or create it if it doesn't exist yet
-    vein.prototype.getStylesheet = function() {
+    vein.getStylesheet = function() {
         var self = this;
 
         if(!self.element) {
@@ -34,7 +34,7 @@
 
     // Let's inject some CSS. We can supply an array (or string) of selectors, and an object
     // with CSS value and property pairs.
-    vein.prototype.inject = function(selectors, css) {
+    vein.inject = function(selectors, css) {
         var self        =   this,
             element     =   self.getStylesheet(),
             si, sl, matches, ri, rl, cssText, property, mi, ml;
@@ -98,5 +98,5 @@
         return self;
     };
 
-    return new vein();
+    return vein;
 });
