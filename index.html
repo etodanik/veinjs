@@ -43,7 +43,9 @@
 			<a href='#' class='btn btn-primary' id="media-example-trigger">
 				Click here to inject CSS with media queries into our friendly cube!
 			</a>
-			<p>(if you're on a small screen device, it will turn red. If you're on a big screen device, resize your browser and see the injected media query in action)</p>
+			<br>
+			<p>(if you're on a small screen device, it will turn red. If you're on a big screen device, resize your browser and see the injected media query in action). This is acheived by running the following code:</p>
+			<code>vein.inject([{'@media (max-width: 768px)': ['#friendly-cube']}], {'background-color': '#F00'});</code>
 		</div>
 
 		<div class='row'>
