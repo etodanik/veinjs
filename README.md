@@ -14,6 +14,8 @@ http://israelidanny.github.io/veinjs/
 
 - *Performance* - Our minions at jsperf.com tell us that injecting CSS rules for a vast number of elements is VERY fast, check it out for yourself: http://jsperf.com/inject-vs-apply/2
 
+- *Media Query Support* - You can inject media queries and work responsive magic with veinjs dynamically.
+
 # How do I use veinjs?
 
 ## Step 1 - Include your Javascript
@@ -49,6 +51,18 @@ vein.inject(['h2', 'h3'], {'color' : 'green', 'font-weight' : null});
 You know what? Red headers look ugly, let's cancel that.
 ```javascript
 vein.inject('h1', null);
+```
+
+# Media Queries
+veinjs works with media queries, just like it does with regular selectors.
+
+For instance, let's dynamically apply CSS to make all our secondary headers red on small screens!
+```javascript
+vein.inject([{
+    '@media (max-width: 768px)': ['h2']
+}], {
+    'color': '#f00'
+});
 ```
 
 # Component support
