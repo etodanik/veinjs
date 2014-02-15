@@ -1,5 +1,5 @@
 /**
- *  vein.js - version 0.2.1
+ *  vein.js - version 0.2.2
  *
  *  by Danny Povolotski (dannypovolotski@gmail.com)
  **/
