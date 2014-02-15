@@ -23,3 +23,17 @@
 .next-button, .github-button{
 	display: none;
 }
+
+.media-example-canvas{
+	text-align: center;
+}
+
+#friendly-cube{
+	width: 200px;
+	height: 200px;
+	margin: 1em auto;
+	background: #999;
+	color: #fff;
+	padding: 2em;
+	text-align: center;
+}
