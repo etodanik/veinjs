@@ -29,6 +29,6 @@
   "ignore": [
     "**/.*",
     "component.json",
-    "example/*"
+    "example"
   ]
 }
