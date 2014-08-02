@@ -1,0 +1,34 @@
+{
+  "name": "veinjs",
+  "description": "Injects CSS into the document (it's a perfectly legal procedure)",
+  "keywords": [
+    "veinjs",
+    "inject",
+    "css"
+  ],
+  "scripts": [
+    "vein.js"
+  ],
+  "main": "vein.js",
+  "license": "MIT",
+  "homepage": "http://israelidanny.github.io/veinjs/",
+  "_release": "5c70991f9d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5c70991f9d9a2e96e71d50c0d39523fa99d6aa21"
+  },
+  "_source": "git@github.com:israelidanny/veinjs.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:israelidanny/veinjs.git",
+  "_direct": true,
+  "version": "0.2.1",
+  "authors": [
+    "Danny Povolotski <danny@caffeine.co.il>"
+  ],
+  "ignore": [
+    "**/.*",
+    "component.json",
+    "example"
+  ]
+}
