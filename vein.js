@@ -158,7 +158,12 @@
                         for(property in css) {
                             if (css.hasOwnProperty(property)) {
                                 // TODO: Implement priority
-                                matches[mi].style.setProperty(property, css[property], '');
+                                if(matches[mi].style.setProperty) {
+                                    matches[mi].style.setProperty(property, css[property], '');
+                                } else {
+                                    //IE8
+                                    matches[mi].style.setAttribute(property, css[property], '');
+                                }
                             }
                         }
                     }
