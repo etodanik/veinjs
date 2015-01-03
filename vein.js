@@ -84,7 +84,7 @@
             // so we start from the end, and just in case, we would check backwards
             // until we find the right one
             for(si = document.styleSheets.length - 1; si >= 0; si--) {
-                if(document.styleSheets[si].ownerNode === self.element){
+                if((document.styleSheets[si].ownerNode || document.styleSheets[si].owningElement) === self.element){
                     self.stylesheet = document.styleSheets[si];
                     break;
                 }
@@ -158,7 +158,12 @@
                         for(property in css) {
                             if (css.hasOwnProperty(property)) {
                                 // TODO: Implement priority
-                                matches[mi].style.setProperty(property, css[property], '');
+                                if(matches[mi].style.setProperty) {
+                                    matches[mi].style.setProperty(property, css[property], '');
+                                } else {
+                                    //IE8
+                                    matches[mi].style.setAttribute(property, css[property], '');
+                                }
                             }
                         }
                     }
