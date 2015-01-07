@@ -2,7 +2,7 @@
 {
   "name": "veinjs",
   "description": "Injects CSS into the document (it's a perfectly legal procedure)",
-  "version": "0.2.1",
+  "version": "0.3",
   "keywords": [
     "veinjs",
     "inject",
