@@ -74,7 +74,7 @@
         var self = this,
             si, sl;
 
-        if(!self.element) {
+        if(!self.element || !document.getElementById('vein')) {
             self.element = document.createElement("style");
             self.element.setAttribute('type', 'text/css');
             self.element.setAttribute('id', 'vein');
