@@ -30,6 +30,7 @@
 
     var findOrDeleteBySelector = function(selector, stylesheet, css){
         var matches = [],
+            rulesDelete = [],
             rules = stylesheet[ document.all ? 'rules' : 'cssRules' ],
             selectorCompare = selector.replace(/\s/g,''),
             ri, rl;
@@ -45,13 +46,17 @@
             ) {
                 if(css === null) {
                     // If we set css to null, let's delete that ruleset altogether
-                    stylesheet.deleteRule(ri);
+                    rulesDelete.push(ri);
                 }
                 else {
                     // Otherwise - we push it into the matches array
                     matches.push(rules[ri]);
                 }
             }
+        }
+
+        for (ri = 0, rl = rulesDelete.length; ri < rl; ri++) {
+            stylesheet.deleteRule(rulesDelete[ri]);
         }
 
         return matches;
