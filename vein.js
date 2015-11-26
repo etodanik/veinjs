@@ -58,14 +58,14 @@
     };
 
     var cssToString = function(css){
-        cssArray = [];
+        var cssArray = [];
 
-        for(property in css) {
+        for(var property in css) {
             if (css.hasOwnProperty(property)) {
                 cssArray.push(property + ': ' + css[property] + ';');
             }
         }
-        cssText = cssArray.join('');
+        var cssText = cssArray.join('');
         return cssText;
     };
 
