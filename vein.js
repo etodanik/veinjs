@@ -42,7 +42,8 @@
                 // regular style selector
                 (rules[ri].selectorText === selector)   ||
                 // for media queries, remove spaces and see if the query matches
-                (rules[ri].type === 4 && rules[ri].cssText.replace(/\s/g,'').substring(0, selectorCompare.length) == selectorCompare)
+                ((rules[ri].type === 4 || rules[ri].type === 6) 
+                    && rules[ri].cssText.replace(/\s/g,'').substring(0, selectorCompare.length) == selectorCompare)
             ) {
                 if(css === null) {
                     // If we set css to null, let's delete that ruleset altogether
