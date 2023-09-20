@@ -1,3 +1,6 @@
+# DEPRECATED
+This repository has been deprecated and will not be maintained.
+
 veinjs
 ======
 
